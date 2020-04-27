@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainPageController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="131.0">
+         <children>
+            <Button fx:id="AddUntimedTaskButton" layoutX="6.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleAddUntimedTaskButton" prefHeight="42.0" prefWidth="119.0" text="Add Untimed Task" />
+            <Button fx:id="addTaskButton" layoutX="6.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleAddTaskButton" prefHeight="42.0" prefWidth="119.0" text="Add Timed Task" />
+            <Button fx:id="AddMealButton" layoutX="6.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleMealButton" prefHeight="42.0" prefWidth="119.0" text="Add Meal" />
+            <Button fx:id="RemoveTaskButton" layoutX="6.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleRemoveTaskButton" prefHeight="42.0" prefWidth="119.0" text="Remove Task">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="500.0" prefWidth="84.0" />
+      <VBox fx:id="mainLayout" prefHeight="500.0" prefWidth="635.0" />
+      <ScrollBar orientation="VERTICAL" prefHeight="500.0" prefWidth="21.0" />
+   </children>
+</HBox>

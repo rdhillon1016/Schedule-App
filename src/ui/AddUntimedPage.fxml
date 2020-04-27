@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddUntimedPageController">
+   <children>
+      <Label layoutX="285.0" layoutY="20.0" text="Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="213.0" layoutY="46.0" />
+      <TextArea fx:id="taskDescription" layoutX="115.0" layoutY="131.0" prefHeight="192.0" prefWidth="370.0" />
+      <Label layoutX="249.0" layoutY="104.0" text="Task Description">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addTaskButton" layoutX="268.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleTaskButton" text="Add Task" />
+      <Button fx:id="BackButton" layoutX="6.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+   </children>
+</AnchorPane>
